@@ -5,9 +5,9 @@ on:
 env:
   #SESSION_PATH: "C:/Temp/session.xml"
   AWR_PATH: "C:/AWR/"
-  USERNAME: $ {{ vars.USERNAME }}
-  PASSWORD: $ {{ secrets.PASSWORD }}
-  COMPUTERNAME: $ {{ vars.COMPUTERNAME }}
+  USERNAME: ${{ vars.USERNAME }}
+  PASSWORD: ${{ secrets.PASSWORD }}
+  COMPUTERNAME: ${{ vars.COMPUTERNAME }}
 jobs:
   build:
     runs-on: ubuntu-latest
